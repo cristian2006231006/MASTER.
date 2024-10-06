@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Boutique Angels</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!--CSS-->
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/login/styles.css" rel="stylesheet" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+     <!-- Responsive-->
+     <link rel="stylesheet" href="css/responsive.css" />
+
+     <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      .whatsapp-btn {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        text-decoration: none;
+      }
+
+      .whatsapp-btn img {
+        width: 35px;
+        height: 35px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- header inner -->
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <img src="images/Master_center.png" alt="#" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+              <nav class="navigation navbar navbar-expand-md navbar-dark">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarsExample04"
+                  aria-controls="navbarsExample04"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">
+                        <i class="fas fa-home"></i>
+                        Inicio
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">
+                        <i class="fas fa-info-circle"></i>
+                        Nosotros
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="service.html">
+                        <i class="fas fa-cog"></i>
+                        Servicios
+                      </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="mision.html">
+                        <i class="fas fa-bullseye"></i>
+                        Misión
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">
+                        <i class="fas fa-envelope"></i>
+                        Contáctanos
+                      </a>
+                    </li>
+                    <li class="nav-item d_none login_btn">
+                      <a class="nav-link" href="login.html">
+                        <i class="fas fa-door-open"></i>
+                        Iniciar Sesión
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Iniciar Sesión-->
+
+    <div id="login-wrapper">
+      <div class="login-container" id="loginForm">
+        <form
+          action="/clientes/login"
+          method="POST"
+          class="login-form"
+          style="padding: 23px"
+        >
+          <h2 >
+            Iniciar sesión
+          </h2>
+          <div class="input-group">
+            <label class="u-custom-font u-font-roboto u-label">Correo</label>
+            <input
+              type="text"
+              placeholder="Ingresa tu correo electrónico"
+              name="correo"
+              
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label class="u-custom-font u-font-roboto u-label"
+              >Contraseña</label
+            >
+            <div class="password-wrapper">
+              <input
+                type="password"
+                id="passwordInput"
+                placeholder="Ingresa tu contraseña"
+                name="contrasena"
+                class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+                required
+              />
+              <span class="toggle-password">
+                <i id="toggleIcon" class="fa fa-eye"></i>
+              </span>
+            </div>
+          </div>
+          <div class="u-align-right u-form-group u-form-submit">
+            <button
+              class="boton enviar u-border-3 u-btn u-btn-round u-button-style u-custom-font u-radius u-btn-1"
+            >
+              Ingresar
+            </button>
+          </div>
+          <p class="register-link">
+            No tienes cuenta? <a href="#" id="showRegisterForm">Regístrate</a>
+          </p>
+          <p class="register-link">
+            <a href="#" id="showForgotPasswordForm"
+              >¿Olvidaste tu contraseña?</a
+            >
+          </p>
+        </form>
+      </div>
+
+      <!--Registrarse-->
+      <div
+        class="login-container"
+        id="registerForm"
+        style="display: none"
+      >
+        <form
+          action="/clientes/registro"
+          method="POST"
+          class="login-form"
+          style="padding: 23px"
+        >
+          <h2 class="u-align-center u-form-group u-form-text u-text u-text-2">
+            Regístrate
+          </h2>
+          <div class="input-group">
+            <label class="u-custom-font u-font-roboto u-label">Nombres</label>
+            <input
+              type="text"
+              placeholder="Ingresa tu nombre"
+              name="nombres"
+              class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label class="u-custom-font u-font-roboto u-label">Apellidos</label>
+            <input
+              type="text"
+              placeholder="Ingresa apellidos"
+              name="apellidos"
+              class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label class="u-custom-font u-font-roboto u-label">Dirección</label>
+            <input
+              type="text"
+              placeholder="Ingresa tu direccion"
+              name="direccion"
+              class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+              required
+            />
+          
+
+<div class="input-group">
+  <label class="u-custom-font u-font-roboto u-label">Celular</label>
+  <input
+    type="text"
+    placeholder="Debe empezar por 3 y tener 10 dígitos"
+    name="celular"
+    id="celularInput"
+    class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+    required
+    maxlength="10"
+  />
+</div>
+<div class="input-group">
+  <label class="u-custom-font u-font-roboto u-label">Correo</label>
+  <input
+    type="email"
+    placeholder="Ingresa tu correo electrónico"
+    name="correo"
+    class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+    required
+  />
+</div>
+<div class="input-group">
+  <label class="u-custom-font u-font-roboto u-label">Contraseña</label>
+  <div class="password-wrapper">
+      <input type="password" id="registerPasswordInput" placeholder="Ingresa una contraseña" name="contrasena" class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10" required>
+      <span class="toggle-password">
+          <i id="toggleIconRegister" class="fa fa-eye"></i>
+      </span>
+  </div>
+</div>
+
+<div class="u-align-right u-form-group u-form-submit">
+  <button class="boton enviar u-border-3 u-btn u-btn-round u-button-style u-custom-font u-radius u-btn-1">Registrarse</button>
+</div>    
+           
+          </div>
+          <p class="register-link">
+            ¿Ya tienes cuenta? <a href="#" id="showLoginForm">Inicia sesión</a>
+          </p>
+        </form>
+      </div>
+
+      <!--Olvidar contraseña-->
+      <div
+        class="u-form u-radius-20 u-white u-form-1"
+        id="forgotPasswordForm"
+        style="display: none"
+      >
+        <form
+          action="/clientes/recuperar-contrasena"
+          method="POST"
+          class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+          style="padding: 23px"
+        >
+          <h4 class="u-align-center u-form-group u-form-text u-text u-text-2">
+            Recuperar Contraseña
+          </h4>
+          <div class="u-form-group u-form-email">
+            <div class="u-form-group u-form-email">
+              <label class="u-custom-font u-font-roboto u-label">Correo</label>
+              <input
+                type="email"
+                placeholder="Ingresa tu correo electrónico"
+                name="correo"
+                class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+                required
+              />
+            </div>
+            <label class="u-custom-font u-font-roboto u-label"
+              >Nueva contraseña</label
+            >
+            <div class="password-wrapper">
+              <input
+                type="password"
+                placeholder="Nueva contraseña"
+                name="nueva_contrasena"
+                class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+                required
+              />
+              <span class="toggle-password">
+                <i id="toggleIcon" class="fa fa-eye"></i>
+              </span>
+            </div>
+          </div>
+          <div class="u-form-group u-form-email">
+            <label class="u-custom-font u-font-roboto u-label"
+              >Vuelve a escribir la contraseña</label
+            >
+            <div class="password-wrapper">
+              <input
+                type="password"
+                placeholder="Vuelve a escribir la contraseña"
+                name="repita_contrasena"
+                class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+                required
+              />
+              <span class="toggle-password">
+                <i id="toggleIcon" class="fa fa-eye"></i>
+              </span>
+            </div>
+          </div>
+          <div class="u-align-right u-form-group u-form-submit">
+            <button
+              class="boton enviar u-border-3 u-btn u-btn-round u-button-style u-custom-font u-radius u-btn-1"
+            >
+              Guardar
+            </button>
+          </div>
+          <p class="u-align-center">
+            ¿Recordaste tu contraseña?
+            <a href="#" id="showLoginFormFromForgot">Inicia sesión</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <h3 class="footer-title">Contactanos</h3>
+              <ul class="location_icon">
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-map-marker" aria-hidden="true"></i
+                  ></a>
+                  cl 134 Bis #45a-20!<br />
+                  Bogotá
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fa fa-volume-control-phone"
+                      aria-hidden="true"
+                    ></i></a
+                  >+57 3118089487
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <h3 class="footer-title">Redes Sociales</h3>
+              <ul class="social_icon">
+                <li>
+                  <a
+                    href="https://www.facebook.com/groups/569329231237225/?ref=share&mibextid=NSMWBT"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tiktok.com/@mastercenter_plus?_t=8oTBfyMPmtS&_r=1"
+                    ><i class="fab fa-tiktok"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/mastercenter_plus?igsh=M2UxMmxpaWpxcWky"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="/https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/counterup/counterup.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script>
+      function validarFormulario(event) {
+        event.preventDefault(); // Evita el envío del formulario automáticamente
+    
+        // Validar el campo de celular
+        const celularInput = document.getElementById('celularInput').value;
+        const celularRegex = /^3\d{9}$/;
+    
+        if (!celularRegex.test(celularInput)) {
+          alert('El número de celular debe empezar por 3 y tener 10 dígitos.');
+          return;
+        }
+    
+        // Función para validar la contraseña en el registro
+        registerPasswordInput.addEventListener('input', () => {
+                    const password = registerPasswordInput.value;
+                    const hasUppercase = /[A-Z]/.test(password);
+                    const hasNumber = /[0-9]/.test(password);
+        
+                    if (!hasUppercase || !hasNumber) {
+                        registerPasswordInput.setCustomValidity('La contraseña debe contener al menos una letra mayúscula y un número.');
+                    } else {
+                        registerPasswordInput.setCustomValidity('');
+                    }
+                  });
+    // Si todo es válido, se puede enviar el formulario o continuar con la lógica
+        alert('Formulario enviado correctamente.');
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+          $('#mostrarFormulario').click(function () {
+              $('#loginForm').show();
+              $('#registerForm').hide();
+              $('#forgotPasswordForm').hide();
+          });
+
+          $('#showRegisterForm').click(function () {
+              $('#loginForm').hide();
+              $('#registerForm').show();
+              $('#forgotPasswordForm').hide();
+          });
+
+          $('#showForgotPasswordForm').click(function () {
+              $('#loginForm').hide();
+              $('#registerForm').hide();
+              $('#forgotPasswordForm').show();
+          });
+
+          $('#showLoginForm').click(function () {
+              $('#loginForm').show();
+              $('#registerForm').hide();
+              $('#forgotPasswordForm').hide();
+          });
+
+          $('#showLoginFormFromForgotPassword').click(function () {
+              $('#loginForm').show();
+              $('#registerForm').hide();
+              $('#forgotPasswordForm').hide();
+          });
+
+          $('.toggle-password').click(function () {
+              var input = $(this).siblings('input');
+              var icon = $(this).find('i');
+              if (input.attr('type') === 'password') {
+                  input.attr('type', 'text');
+                  icon.removeClass('fa-eye').addClass('fa-eye-slash');
+              } else {
+                  input.attr('type', 'password');
+                  icon.removeClass('fa-eye-slash').addClass('fa-eye');
+              }
+          });
+      });
+  </script>
+
+    <!-- Contact Javascript File -->
+    <script src="/mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- JS -->
+    <script src="/js/main.js"></script>
+    <script src="/js/login/ini.js"></script>
+  </body>
+</html>
